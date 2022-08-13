@@ -11,5 +11,8 @@ Udacity NANODEGREE Program - First Project
 
 ## Project status
 
-blank
+The project is still under underdevelopment. And its current status will be written here.
+<br>
+
+
 
