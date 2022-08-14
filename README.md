@@ -3,24 +3,12 @@ Image Processing API
 </h1>
 
 <p align="center">
-Udacity NANODEGREE Program - First Project
-<br>By : Yousef Saeed
+API that can be used to scale images via URL parameters.
+<br>Udacity NANODEGREE Program - ( First Project )
+<br>- By : Yousef Saeed -
 </p>
 
 ---
-
-## Project status
-
-The project is still under underdevelopment. And its current status will be written here.
-
-<br>
-
-- [14/8] Configured Jasmine
-
-- [13/8] Run the server on port 3000 `localhost:3000`.
-
-- [13/8] Initialize Project Structure.
-
 
 ## Installation
 
@@ -38,15 +26,22 @@ Build the TypeScript files into JavaScript files and save the JS files in the `.
 npm run start
 ```
 
-Start the server running on port `3000`.
+Start running the server on port `3000`.
 
+<br>
 
 ### Other Scripts
 
 ```
 npm run test
 ```
-Test with Jasmine
+Build and run Jasmine
+
+```
+npm run jasmine
+```
+
+Run Jasmine w/o building
 
 ```
 npm run prettier
@@ -59,4 +54,15 @@ npm run lint
 ```
 
 Run ESLint
+
+
+## Project Log
+
+The project is still under underdevelopment. Changes and updates will be listed here.
+
+- `14/8` Configured Jasmine.
+
+- `13/8` Run the server on port 3000 `http://localhost:3000`.
+
+- `13/8` Initialize Project Structure.
 
