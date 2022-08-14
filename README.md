@@ -15,16 +15,14 @@ The project is still under underdevelopment. And its current status will be writ
 
 <br>
 
-- Run the server on port 3000 `localhost:3000`.
+- [14/8] Configured Jasmine
 
-- Initialize Project Structure.
+- [13/8] Run the server on port 3000 `localhost:3000`.
+
+- [13/8] Initialize Project Structure.
 
 
 ## Installation
-
-### Dependencies
-
-`npm`
 
 ### Build
 
@@ -43,9 +41,22 @@ npm run start
 Start the server running on port `3000`.
 
 
+### Other Scripts
 
-## Resources
+```
+npm run test
+```
+Test with Jasmine
 
-- [Creating a Minimal TypeScript Express Server](https://www.digitalocean.com/community/tutorials/setting-up-a-node-project-with-typescript#step-3-creating-a-minimal-typescript-express-server)
+```
+npm run prettier
+```
 
+Run Prettier
+
+```
+npm run lint
+```
+
+Run ESLint
 
