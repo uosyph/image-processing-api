@@ -9,13 +9,11 @@ Udacity NANODEGREE Program - First Project
 
 ---
 
-## Project status
+## Project Log
 
-The project is still under underdevelopment. And its current status will be written here.
+The project is still under underdevelopment. And its log will be written here (newest to oldest).
 
-<br>
-
-- Run the server on port 3000 `localhost:3000`.
+- Run the server on port 3000 `http://localhost:3000`.
 
 - Initialize Project Structure.
 
@@ -40,7 +38,7 @@ Build the TypeScript files into JavaScript files and save the JS files in the `.
 npm run start
 ```
 
-Start the server running on port `3000`.
+Start running the server on port `3000`.
 
 
 
