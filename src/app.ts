@@ -1,14 +1,13 @@
 import express from 'express';
+import routes from './routes/index';
 
 const app = express();
 const port = 3000;
 
-app.get('/api', (req, res) => {
-  res.send('test');
+app.get('/', (req, res) => {
+    res.send('');
 });
 
 app.listen(port, () => {
-  console.log(`Express is listening at http://localhost:${port}`);
+    console.log(`Server started at http://localhost:${port}`);
 });
-
-export default app;
