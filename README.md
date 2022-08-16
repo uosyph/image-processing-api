@@ -33,6 +33,12 @@ Start running the server on port `3000`.
 ### Other Scripts
 
 ```
+npm run dev
+```
+
+Start running the server w/ **nodemon**
+
+```
 npm run test
 ```
 Build and run Jasmine
@@ -60,9 +66,9 @@ Run ESLint
 
 The project is still under underdevelopment. Changes and updates will be listed here.
 
-- `14/8` Configured Jasmine.
+- ***14/8*** &nbsp; Configured Jasmine.
 
-- `13/8` Run the server on port 3000 `http://localhost:3000`.
+- ***13/8*** &nbsp; Run the server on port 3000 `http://localhost:3000`.
 
-- `13/8` Initialize Project Structure.
+- ***13/8*** &nbsp; Initialize Project Structure.
 

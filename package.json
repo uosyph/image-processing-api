@@ -1,7 +1,7 @@
 {
   "name": "image-processing-api",
   "version": "1.0.0",
-  "description": "<h1 align=\"center\"> Image Processing API </h1>",
+  "description": "API that can be used to scale images via URL parameters",
   "main": "build/app.js",
   "scripts": {
     "prettier": "prettier --config .prettierrc 'build/*.js' 'src/*.ts' --write",
@@ -9,7 +9,8 @@
     "jasmine": "jasmine",
     "test": "npx tsc && jasmine",
     "build": "npx tsc",
-    "start": "tsc && nodemon build/app.js"
+    "dev": "nodemon src/app.ts",
+    "start": "tsc && node build/app.js"
   },
   "repository": {
     "type": "git",
@@ -40,6 +41,7 @@
     "express": "^4.18.1",
     "jasmine": "^4.3.0",
     "jasmine-spec-reporter": "^7.0.0",
+    "sharp": "^0.30.7",
     "supertest": "^6.2.4"
   }
 }
