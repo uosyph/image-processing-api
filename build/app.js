@@ -5,15 +5,18 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const index_1 = __importDefault(require("./routes/index"));
+const logExistingImgs_1 = __importDefault(require("./logging/logExistingImgs"));
 const app = (0, express_1.default)();
-const port = 3000;
+const PORT = 3000;
 // api route
 app.use('/api', index_1.default);
 // main route
 app.get('/', (req, res) => {
-    res.send('main');
+    res.send('Main Route');
 });
-app.listen(port, () => {
-    console.log(`Server started at http://localhost:${port}`);
+app.listen(PORT, () => {
+    console.log(`Server started at http://localhost:${PORT}`);
 });
+// write existing images names to a csv file
+(0, logExistingImgs_1.default)();
 exports.default = app;

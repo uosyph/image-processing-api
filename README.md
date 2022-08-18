@@ -36,7 +36,13 @@ Start running the server on port `3000`.
 npm run dev
 ```
 
-Start running the server w/ **nodemon**
+Start running the server w/ **nodemon** from src/app.ts
+
+```
+npm run devjs
+```
+
+Start running the server w/ **nodemon** from build/app.js
 
 ```
 npm run test

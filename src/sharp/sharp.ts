@@ -1,3 +1,3 @@
-import sharp from 'sharp';
-import resize from '../routes/api/resize';
+// import sharp from 'sharp';
+// import resize from '../routes/api/resize';
 

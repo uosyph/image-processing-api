@@ -9,8 +9,9 @@
     "jasmine": "jasmine",
     "test": "npx tsc && jasmine",
     "build": "npx tsc",
+    "start": "tsc && node build/app.js",
     "dev": "nodemon src/app.ts",
-    "start": "tsc && node build/app.js"
+    "devjs": "nodemon build/app.js"
   },
   "repository": {
     "type": "git",

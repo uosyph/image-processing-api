@@ -1,20 +1,24 @@
 import express from 'express';
+
 import routes from './routes/index';
+import imgLogger from './logging/logExistingImgs';
 
 const app = express();
-const port = 3000;
+const PORT = 3000;
 
 // api route
 app.use('/api', routes);
 
 // main route
 app.get('/', (req, res) => {
-    res.send('main');
+    res.send('Main Route');
 });
 
-app.listen(port, () => {
-    console.log(`Server started at http://localhost:${port}`);
+app.listen(PORT, () => {
+    console.log(`Server started at http://localhost:${PORT}`);
 });
 
+// write existing images names to a csv file
+imgLogger();
 
 export default app;
