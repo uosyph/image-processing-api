@@ -4,7 +4,7 @@
   "description": "API that can be used to scale images via URL parameters",
   "main": "build/app.js",
   "scripts": {
-    "prettier": "prettier --config .prettierrc 'build/*.js' 'src/*.ts' --write",
+    "prettier": "prettier --config .prettierrc 'build/**/*.js' 'src/**/*.ts' --write",
     "lint": "eslint . --ext .ts",
     "jasmine": "jasmine",
     "test": "npx tsc && jasmine",

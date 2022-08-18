@@ -4,8 +4,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const logExistingImgs_1 = __importDefault(require("../logging/logExistingImgs"));
-describe("test exisiting image logger", () => {
-    it("test the file fetcher", () => {
+describe('test exisiting image logger', () => {
+    it('test the file fetcher', () => {
         expect(logExistingImgs_1.default);
     });
 });

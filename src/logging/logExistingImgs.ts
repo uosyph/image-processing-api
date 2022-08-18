@@ -1,4 +1,4 @@
-// create a csv file containing images' names in assets/full/ 
+// create a csv file containing images' names in assets/full/
 
 import fs from 'fs';
 
@@ -11,9 +11,12 @@ const OG_IMGS_CSV = './assets/full/exsistingImgs.csv';
 
 // write the file and store it
 function imgLogger() {
-    fs.writeFile(OG_IMGS_CSV, IMGS_NAMES, function(err){
+    fs.writeFile(OG_IMGS_CSV, IMGS_NAMES, function (err) {
         if (err) throw err;
-        else console.log('Orignal Images Names Saved into \'assets/full/exsistingImgs.csv\'');
+        else
+            console.log(
+                "Orignal Images Names Saved into 'assets/full/exsistingImgs.csv'"
+            );
     });
 }
 

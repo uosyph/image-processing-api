@@ -3,13 +3,20 @@
 
 import fs from 'fs';
 import { OG_IMGS_CSV } from '../logging/logExistingImgs';
-import { filename } from '../routes/api/resize';
+import { filename, height, width } from '../routes/api/resize';
+import resize from '../sharp/sharp';
 
 function checkImg() {
     fs.readFile(OG_IMGS_CSV, function (err, data) {
         if (err) throw err;
-        if (data.includes(filename)) { console.log('Valid Image Name. Processing...'); }
-        else { console.log('Unvalid Image Name.. Check and Retry.') };
+        if (data.includes(filename)) {
+            console.log('Valid Image Name. Processing...');
+
+            resize(filename, height, width);
+        }
+        else {
+            console.log('Unvalid Image Name.. Check and Retry.');
+        }
     });
 }
 

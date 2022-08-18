@@ -1,5 +1,5 @@
 "use strict";
-// create a csv file containing images' names in assets/full/ 
+// create a csv file containing images' names in assets/full/
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
@@ -19,7 +19,7 @@ function imgLogger() {
         if (err)
             throw err;
         else
-            console.log('Orignal Images Names Saved into \'assets/full/exsistingImgs.csv\'');
+            console.log("Orignal Images Names Saved into 'assets/full/exsistingImgs.csv'");
     });
 }
 exports.default = imgLogger;
