@@ -1,8 +1,15 @@
 "use strict";
-// import sharp from 'sharp';
-// import resize from '../routes/api/resize';
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-function resize(filename, height, width) {
-    // sharp method
+exports.resImgName = void 0;
+const logResizedImg_1 = __importDefault(require("../logging/logResizedImg"));
+let resImgName;
+exports.resImgName = resImgName;
+function resizeImg(filename, height, width) {
+    exports.resImgName = resImgName = String(filename + '_' + height + '_' + width + '.jpg');
+    // sharp
+    (0, logResizedImg_1.default)();
 }
-exports.default = resize;
+exports.default = resizeImg;

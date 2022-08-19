@@ -1,3 +1,5 @@
+<a name="readme-top"></a>
+
 <h1 align="center">
 Image Processing API
 </h1>
@@ -68,13 +70,50 @@ npm run lint
 Run ESLint
 
 
-## Project Log
+## Built With
+
+* [![Node][node.shield]][node-url]
+* [![TypeScript][ts.shield]][ts-url]
+* [![Jasmine][jasmine.shield]][jasmine-url]
+* [![Express][express.shield]][express-url]
+* [![Sharp][sharp.shield]][sharp-url]
+
+
+## Changelog
 
 The project is still under underdevelopment. Changes and updates will be listed here.
+
+- ***19/8*** &nbsp; Added middleware to Check if same image is resized with same dimensions before.
+
+- ***18/8*** &nbsp; Added middleware to check if image exists.
+
+- ***17/8*** &nbsp; Added middleware to write existing image names into CSV file and another for resized images.
+
+- ***15/8*** &nbsp; Configuration & Scripts.
 
 - ***14/8*** &nbsp; Configured Jasmine.
 
 - ***13/8*** &nbsp; Run the server on port 3000 `http://localhost:3000`.
 
 - ***13/8*** &nbsp; Initialize Project Structure.
+
+
+<p align="right">(<a href="#readme-top">Back to Top</a>)</p>
+
+
+
+[node-shield]: https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white
+[node-url]: https://nodejs.org/
+
+[ts-shield]: https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white
+[ts-url]: https://www.typescriptlang.org/
+
+[jasmine-shield]: https://img.shields.io/badge/jasmine.js-8a4182?style=for-the-badge&logo=jasmine&logoColor=white
+[jasmine-url]: https://jasmine.github.io/
+
+[express-shield]: https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=express&logoColor=white
+[express-url]: https://expressjs.com/
+
+[sharp-shield]: https://img.shields.io/badge/sharp.js-009900?style=for-the-badge&logo=sharp&logoColor=white
+[sharp-url]: https://sharp.pixelplumbing.com/
 
