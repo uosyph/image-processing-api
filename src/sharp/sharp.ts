@@ -10,6 +10,8 @@ function resizeImg(filename: string, height: number, width: number) {
     // sharp
 
     resImgLogger();
+    console.log('Image has been resized');
+    // open resImgName
 }
 
 export default resizeImg;

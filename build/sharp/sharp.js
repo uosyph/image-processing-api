@@ -11,5 +11,7 @@ function resizeImg(filename, height, width) {
     exports.resImgName = resImgName = String(filename + '_' + height + '_' + width + '.jpg');
     // sharp
     (0, logResizedImg_1.default)();
+    console.log('Image has been resized');
+    // open resImgName
 }
 exports.default = resizeImg;

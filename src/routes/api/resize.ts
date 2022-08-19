@@ -1,6 +1,6 @@
 import express from 'express';
 
-import checkImg from '../../validity/imgExisits';
+import checkIfDoneBefore from '../../validity/imgResBefore';
 
 const resize = express.Router();
 
@@ -20,7 +20,7 @@ resize.get('/', (req, res) => {
     //check if the parameters in the URL are valid (filename: string, height and width: number)
     if (typeof filename === 'string' && !isNaN(height) && !isNaN(width)) {
         console.log('Valid Parameters. Processing...');
-        checkImg();
+        checkIfDoneBefore();
     }
     else {
         console.log(
