@@ -102,18 +102,18 @@ The project is still under underdevelopment. Changes and updates will be listed 
 
 
 
-[node-shield]: https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white
+[node.shield]: https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white
 [node-url]: https://nodejs.org/
 
-[ts-shield]: https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white
+[ts.shield]: https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white
 [ts-url]: https://www.typescriptlang.org/
 
-[jasmine-shield]: https://img.shields.io/badge/jasmine.js-8a4182?style=for-the-badge&logo=jasmine&logoColor=white
+[jasmine.shield]: https://img.shields.io/badge/jasmine.js-8a4182?style=for-the-badge&logo=jasmine&logoColor=white
 [jasmine-url]: https://jasmine.github.io/
 
-[express-shield]: https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=express&logoColor=white
+[express.shield]: https://img.shields.io/badge/Express.js-404D59?style=for-the-badge&logo=express&logoColor=white
 [express-url]: https://expressjs.com/
 
-[sharp-shield]: https://img.shields.io/badge/sharp.js-009900?style=for-the-badge&logo=sharp&logoColor=white
+[sharp.shield]: https://img.shields.io/badge/sharp.js-009900?style=for-the-badge&logo=sharp&logoColor=white
 [sharp-url]: https://sharp.pixelplumbing.com/
 
