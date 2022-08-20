@@ -7,6 +7,8 @@ import resImgLogger from './logging/logResizedImg'
 const app = express();
 const PORT = 3000;
 
+app.set('view engine', 'ejs');
+
 // api route
 app.use('/api', routes);
 

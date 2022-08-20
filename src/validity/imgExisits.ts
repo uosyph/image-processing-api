@@ -3,7 +3,7 @@
 
 import fs from 'fs';
 import { OG_IMGS_CSV } from '../logging/logExistingImgs';
-import { filename } from '../routes/api/resize';
+import { filename, height, width } from '../routes/api/resize';
 import resizeImg from '../sharp/sharp';
 
 function checkImg() {
@@ -12,7 +12,7 @@ function checkImg() {
         if (data.includes('\n' + filename + '.jpg')) {
             console.log('Processing...');
 
-            // resizeImg(filename, height, width);
+            resizeImg(filename, height, width);
         }
         else {
             console.log('Unvalid Image Name.. Check and Retry.');

@@ -4,6 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const fs_1 = __importDefault(require("fs"));
+const preview_1 = __importDefault(require("../preview/preview"));
 const resize_1 = require("../routes/api/resize");
 const imgExisits_1 = __importDefault(require("./imgExisits"));
 const RES_IMGS_CSV = './assets/resized/.resizedImgs.csv';
@@ -12,9 +13,9 @@ function checkIfDoneBefore() {
         if (err)
             throw err;
         if (data.includes(resize_1.filename + '_' + resize_1.height + '_' + resize_1.width + '.jpg')) {
+            (0, preview_1.default)(resize_1.filename, resize_1.height, resize_1.width);
             console.log('The same image has been resized before with the same Height and Width.');
             console.log(resize_1.filename + '_' + resize_1.height + '_' + resize_1.width + '.jpg');
-            // open filename + '_' + height + '_' + width + '.jpg'
         }
         else {
             console.log(resize_1.filename + '.jpg');

@@ -83,6 +83,8 @@ Run ESLint
 
 The project is still under underdevelopment. Changes and updates will be listed here.
 
+- ***20/8*** &nbsp; EJS
+
 - ***19/8*** &nbsp; Added middleware to Check if same image is resized with same dimensions before.
 
 - ***18/8*** &nbsp; Added middleware to check if image exists.

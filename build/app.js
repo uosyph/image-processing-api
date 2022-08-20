@@ -9,6 +9,7 @@ const logExistingImgs_1 = __importDefault(require("./logging/logExistingImgs"));
 const logResizedImg_1 = __importDefault(require("./logging/logResizedImg"));
 const app = (0, express_1.default)();
 const PORT = 3000;
+app.set('view engine', 'ejs');
 // api route
 app.use('/api', index_1.default);
 // main route
