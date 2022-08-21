@@ -6,16 +6,17 @@
 
 import fs from 'fs';
 
-
 function resImgLogger() {
     const RES_IMGS_DIR = './assets/resized/';
     const IMGS_NAMES = fs.readdirSync(RES_IMGS_DIR).join('\n');
     const RES_IMGS_CSV = './assets/resized/.resizedImgs.csv';
-    
+
     fs.writeFile(RES_IMGS_CSV, IMGS_NAMES + '\n', function (err) {
         if (err) throw err;
         else {
-            console.log("Resized Image Name and Dimensions Saved to 'assets/resized/.resizedImgs.csv'");
+            console.log(
+                "Resized Image Name and Dimensions Saved to 'assets/resized/.resizedImgs.csv'"
+            );
         }
     });
 }

@@ -13,8 +13,7 @@ function checkImg() {
             console.log('Processing...');
 
             resizeImg(filename, height, width);
-        }
-        else {
+        } else {
             console.log('Unvalid Image Name.. Check and Retry.');
         }
     });

@@ -1,28 +1,21 @@
 import express from 'express';
 
-import previewImg from '../../preview/preview';
-import previewOGImg from '../../preview/previewOG'
-
 const preview = express.Router();
 
-let filename: string;
-let height: number;
-let width: number;
-
 preview.get ('/', (req, res) => {
-    res.send('Preview Image');
-
-    filename = String(req.query.filename);
-    height = Number(req.query.height);
-    width = Number(req.query.width);
+    let filename = String(req.query.filename);
+    let height = Number(req.query.height);
+    let width = Number(req.query.width);
 
     //check if the parameters in the URL are valid (filename: string, height and width: number)
     if (typeof filename === 'string' && !isNaN(height) && !isNaN(width)) {
-        previewImg(filename, height, width);
+        var imgPath = "/resized/" + filename + "_" + height + "_" + width + ".jpg";
+        res.render('resized', { imgPath: imgPath } );
     }
-    else if(typeof filename === 'string' && isNaN(height) && isNaN(width)) {
-        previewOGImg(filename);
-    }
+    else if (typeof filename === 'string' && isNaN(height) && isNaN(width)) {
+        var imgPath = "/full/" + filename + ".jpg";
+        res.render('resized', { imgPath: imgPath } );    
+    } 
     else {
         console.log(
             'Unvalid Parameters.. Check and Retry.\n',

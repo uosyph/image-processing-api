@@ -12,10 +12,11 @@ function checkIfDoneBefore() {
         if (data.includes(filename + '_' + height + '_' + width + '.jpg')) {
             previewImg(filename, height, width);
 
-            console.log('The same image has been resized before with the same Height and Width.');
+            console.log(
+                'The same image has been resized before with the same Height and Width.'
+            );
             console.log(filename + '_' + height + '_' + width + '.jpg');
-        }
-        else {
+        } else {
             console.log(filename + '.jpg');
             checkImg();
         }

@@ -69,6 +69,13 @@ npm run lint
 
 Run ESLint
 
+## FLOWCHART
+
+<img src="flowchart.png">
+
+<img src="flowchart-resize-route.png">
+
+<img src="flowchart-preview-route.png">
 
 ## Built With
 

@@ -4,11 +4,13 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
+const path_1 = __importDefault(require("path"));
 const index_1 = __importDefault(require("./routes/index"));
 const logExistingImgs_1 = __importDefault(require("./logging/logExistingImgs"));
 const logResizedImg_1 = __importDefault(require("./logging/logResizedImg"));
 const app = (0, express_1.default)();
 const PORT = 3000;
+app.use(express_1.default.static(path_1.default.join(__dirname + 'assets')));
 app.set('view engine', 'ejs');
 // api route
 app.use('/api', index_1.default);

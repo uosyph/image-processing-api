@@ -8,7 +8,7 @@ let filename: string;
 let height: number;
 let width: number;
 
-resize.get('/', (req, res) => {
+resize.get('/', async (req, res) => {
     res.send(
         'ex: localhost:3000/api/resize?filename=imagename&height=400&width=300'
     );
@@ -21,8 +21,7 @@ resize.get('/', (req, res) => {
     if (typeof filename === 'string' && !isNaN(height) && !isNaN(width)) {
         console.log('Valid Parameters. Processing...');
         checkIfDoneBefore();
-    }
-    else {
+    } else {
         console.log(
             'Unvalid Parameters.. Check and Retry.\n',
             '(',
