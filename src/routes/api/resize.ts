@@ -8,9 +8,9 @@ let filename: string;
 let height: number;
 let width: number;
 
-resize.get('/', async (req, res) => {
+resize.get('/', (req, res) => {
     res.send(
-        'ex: localhost:3000/api/resize?filename=imagename&height=400&width=300'
+        'ex: localhost:3000/api/resize/?filename=imagename&height=400&width=300'
     );
 
     filename = String(req.query.filename);

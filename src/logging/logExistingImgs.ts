@@ -10,13 +10,14 @@ const IMGS_NAMES = fs.readdirSync(OG_IMGS_DIR).join('\n');
 const OG_IMGS_CSV = './assets/full/.exsistingImgs.csv';
 
 // write the file and store it
-function imgLogger() {
+async function imgLogger() {
     fs.writeFile(OG_IMGS_CSV, IMGS_NAMES, function (err) {
         if (err) throw err;
-        else
+        else {
             console.log(
                 "Orignal Images Names Saved into 'assets/full/.exsistingImgs.csv'"
             );
+        }
     });
 }
 

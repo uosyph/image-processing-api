@@ -6,7 +6,7 @@ import { OG_IMGS_CSV } from '../logging/logExistingImgs';
 import { filename, height, width } from '../routes/api/resize';
 import resizeImg from '../sharp/sharp';
 
-function checkImg() {
+async function checkImg() {
     fs.readFile(OG_IMGS_CSV, function (err, data) {
         if (err) throw err;
         if (data.includes('\n' + filename + '.jpg')) {

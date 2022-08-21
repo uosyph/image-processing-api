@@ -69,6 +69,31 @@ npm run lint
 
 Run ESLint
 
+
+## ENDPOINT
+
+### Resize Image
+
+`Example: http://localhost:3000/api/resize/?filename=<ImageName>&height=<height>&width=<width>`
+
+Resize the image `filename` using the `Height` and `Width` in the URL parameters.
+
+### Preview Image
+
+#### URL does have `Height` and `Width` parameters
+
+`Example: http://localhost:3000/api/preview/?filename=<ImageName>&height=<height>&width=<width>`
+
+Diplay resized image from assets/resized
+
+#### URL does have *only* `filenane` parameter
+
+`Example: http://localhost:3000/api/preview/?filename=<ImageName>`
+
+Diplay full size image from assets/full
+
+
+
 ## FLOWCHART
 
 <img src="flowchart.png">

@@ -6,7 +6,7 @@
 
 import fs from 'fs';
 
-function resImgLogger() {
+async function resImgLogger() {
     const RES_IMGS_DIR = './assets/resized/';
     const IMGS_NAMES = fs.readdirSync(RES_IMGS_DIR).join('\n');
     const RES_IMGS_CSV = './assets/resized/.resizedImgs.csv';

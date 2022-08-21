@@ -1,10 +1,9 @@
 import sharp from 'sharp';
 import resImgLogger from '../logging/logResizedImg';
-import previewImg from '../preview/preview';
 
 let resImgName: string;
 
-function resizeImg(filename: string, height: number, width: number) {
+async function resizeImg(filename: string, height: number, width: number) {
     resImgName = String(filename + '_' + height + '_' + width + '.jpg');
 
     sharp('./assets/full/' + filename + '.jpg')
@@ -18,8 +17,6 @@ function resizeImg(filename: string, height: number, width: number) {
             './assets/resized/' + filename + '_' + height + '_' + width + '.jpg'
         )
         .then(() => {
-            previewImg(filename, height, width);
-
             console.log(
                 'Image has been resized and save to' +
                     './assets/resized/' +
