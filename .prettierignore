@@ -1,0 +1,7 @@
+node_modules
+build
+src/preview
+views
+spec
+*.json
+*.md
