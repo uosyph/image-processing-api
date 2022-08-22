@@ -119,8 +119,6 @@ Diplay full size image from assets/full
 
 ## Changelog
 
-The project is still under underdevelopment. Changes and updates will be listed here.
-
 - ***22/8*** &nbsp; Final Edits and added some comments for easier navigation in the code.
 
 - ***21/8*** &nbsp; Added Preview Route.
@@ -140,6 +138,14 @@ The project is still under underdevelopment. Changes and updates will be listed 
 - ***13/8*** &nbsp; Run the server on port 3000 `http://localhost:3000`.
 
 - ***13/8*** &nbsp; Initialize Project Structure.
+
+
+## Resources
+
+- Find a string in a file : https://stackoverflow.com/a/17449232/18250861
+
+- Write files names in directory to a file : https://stackoverflow.com/a/51125945/18250861
+
 
 
 <p align="right">(<a href="#readme-top">Back to Top</a>)</p>
