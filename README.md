@@ -119,6 +119,8 @@ Diplay full size image from assets/full
 
 ## Changelog
 
+- ***22/8*** &nbsp; Error Handling for **resize** route and **preview** route.
+
 - ***22/8*** &nbsp; Final Edits and added some comments for easier navigation in the code.
 
 - ***21/8*** &nbsp; Added Preview Route.
