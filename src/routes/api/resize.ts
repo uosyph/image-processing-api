@@ -9,7 +9,7 @@ let width: number;
 
 resize.get('/', (req, res) => {
     res.send(
-        'Resize Route\nExample: localhost:3000/api/resize/?filename=<ImageName>&height=<height>&width=<width>'
+        'Resize Route. Example: localhost:3000/api/resize/?filename=<ImageName>&height=<height>&width=<width>'
     );
 
     // take params from URL

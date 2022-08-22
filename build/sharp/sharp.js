@@ -23,21 +23,19 @@ function resizeImg(filename, height, width) {
         (0, sharp_1.default)('./assets/full/' + filename + '.jpg')
             .resize(width, height, {
             kernel: sharp_1.default.kernel.nearest,
-            fit: 'contain',
-            position: 'right top',
-            background: { r: 255, g: 255, b: 255, alpha: 0.5 },
+            fit: 'cover',
+            position: 'centre',
         })
             .toFile('./assets/resized/' + filename + '_' + height + '_' + width + '.jpg')
             .then(() => {
-            console.log('Image has been resized and save to' +
-                './assets/resized/' +
+            console.log("Image has been resized and saved to './assets/resized/'\n" +
+                'To Preview it go to:\nhttp://localhost:3000/api/preview/?filename=' +
                 filename +
-                '_' +
+                '&height=' +
                 height +
-                '_' +
-                width +
-                '.jpg');
-            console.log('Image has been resized');
+                '&width=' +
+                width);
+            // call func to save image name and dimensions to .resizedImgs.csv
             (0, logResizedImg_1.default)();
         });
     });

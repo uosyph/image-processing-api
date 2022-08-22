@@ -112,7 +112,7 @@ Diplay full size image from assets/full
 
 ## Notes:
 
-- If you want to display an image after resizing you have to change the route from *api/resize* to *api/preview*
+- If you want to preview an image after resizing it, you have to change the route from `api/resize` to `api/preview`.
 
 - After planning for using *EJS*, I changed my mind. So it doesn't serve any purpose in the code now.
 

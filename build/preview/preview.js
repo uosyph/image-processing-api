@@ -15,7 +15,8 @@ function previewImg(resImgPath, height, width) {
     return __awaiter(this, void 0, void 0, function* () {
         if (typeof resImgPath === 'string' && !isNaN(height) && !isNaN(width)) {
         }
-        else if ((typeof resImgPath === 'string' && isNaN(height)) || isNaN(width)) {
+        else if ((typeof resImgPath === 'string' && isNaN(height)) ||
+            isNaN(width)) {
         }
     });
 }

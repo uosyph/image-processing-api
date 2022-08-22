@@ -23,6 +23,6 @@ app.listen(PORT, () => {
 });
 // write existing images names to a CSV file
 (0, logExistingImgs_1.default)();
-// make CSV file for resized images later
+// make a CSV file for resized images later
 (0, logResizedImg_1.default)();
 exports.default = app;

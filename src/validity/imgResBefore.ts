@@ -14,9 +14,13 @@ async function checkIfDoneBefore() {
         // if the image resized before with same dimensions log its name
         if (data.includes(filename + '_' + height + '_' + width + '.jpg')) {
             console.log(
-                'The same image has been resized before with the same Height and Width.\nTo Preview it go to http://localhost:3000/api/resize/?filename=' + filename + '&height=' + height + '&width=' + width
+                'The same image has been resized before with the same Height and Width.\nTo Preview it go to:\nhttp://localhost:3000/api/preview/?filename=' +
+                    filename +
+                    '&height=' +
+                    height +
+                    '&width=' +
+                    width
             );
-            console.log(filename + '_' + height + '_' + width + '.jpg');
         } else {
             // if image hasn't been resized before with same dimensions; call the func to check if the image even exists
             checkImg();

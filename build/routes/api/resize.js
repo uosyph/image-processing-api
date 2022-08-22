@@ -14,13 +14,15 @@ exports.height = height;
 let width;
 exports.width = width;
 resize.get('/', (req, res) => {
-    res.send('ex: localhost:3000/api/resize/?filename=imagename&height=400&width=300');
+    res.send('Resize Route. Example: localhost:3000/api/resize/?filename=<ImageName>&height=<height>&width=<width>');
+    // take params from URL
     exports.filename = filename = String(req.query.filename);
     exports.height = height = Number(req.query.height);
     exports.width = width = Number(req.query.width);
-    //check if the parameters in the URL are valid (filename: string, height and width: number)
+    // check if the parameters in the URL are valid (filename: string, height and width: number)
     if (typeof filename === 'string' && !isNaN(height) && !isNaN(width)) {
         console.log('Valid Parameters. Processing...');
+        // if params are correct check the image if resized before with same dimensions
         (0, imgResBefore_1.default)();
     }
     else {

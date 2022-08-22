@@ -24,13 +24,12 @@ preview.get('/', (req, res) => {
         );
     }
     // if the URL params contains only filename; or missing height or width : check for the image in the assets/full/ dir
-    else if (
-        (typeof filename === 'string' && isNaN(height)) ||
-        isNaN(width)
-    ) {
+    else if ((typeof filename === 'string' && isNaN(height)) || isNaN(width)) {
         res.sendFile(path.resolve('assets/full/' + filename + '.jpg'));
     } else {
-        res.send('Preview Route\nExample: localhost:3000/api/preview/?filename=<ImageName>&height=<height>&width=<width>\nOr localhost:3000/api/resize/?filename=<ImageName>')
+        res.send(
+            'Preview Route. Example: localhost:3000/api/preview/?filename=<ImageName>&height=<height>&width=<width>\nOr localhost:3000/api/resize/?filename=<ImageName>'
+        );
         console.log(
             'Unvalid Parameters.. Check and Retry.\n',
             '(',
