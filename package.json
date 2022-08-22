@@ -11,7 +11,7 @@
     "build": "npx tsc",
     "start": "tsc && node build/app.js",
     "dev": "nodemon src/app.ts",
-    "devjs": "nodemon build/app.js"
+    "devjs": "npx tsc && nodemon build/app.js"
   },
   "repository": {
     "type": "git",

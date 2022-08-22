@@ -4,11 +4,12 @@ import path from 'path';
 const preview = express.Router();
 
 preview.get('/', (req, res) => {
+    // take params from URL
     const filename = String(req.query.filename);
     const height = Number(req.query.height);
     const width = Number(req.query.width);
 
-    //check if the parameters in the URL are valid (filename: string, height and width: number)
+    // if the URL params coninats filename, height and width : check for the image in the assets/resized/ dir
     if (typeof filename === 'string' && !isNaN(height) && !isNaN(width)) {
         res.sendFile(
             path.resolve(
@@ -21,12 +22,15 @@ preview.get('/', (req, res) => {
                     '.jpg'
             )
         );
-    } else if (
+    }
+    // if the URL params contains only filename; or missing height or width : check for the image in the assets/full/ dir
+    else if (
         (typeof filename === 'string' && isNaN(height)) ||
         isNaN(width)
     ) {
         res.sendFile(path.resolve('assets/full/' + filename + '.jpg'));
     } else {
+        res.send('Preview Route\nExample: localhost:3000/api/preview/?filename=<ImageName>&height=<height>&width=<width>\nOr localhost:3000/api/resize/?filename=<ImageName>')
         console.log(
             'Unvalid Parameters.. Check and Retry.\n',
             '(',

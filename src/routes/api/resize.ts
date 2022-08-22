@@ -1,5 +1,4 @@
 import express from 'express';
-
 import checkIfDoneBefore from '../../validity/imgResBefore';
 
 const resize = express.Router();
@@ -10,16 +9,18 @@ let width: number;
 
 resize.get('/', (req, res) => {
     res.send(
-        'ex: localhost:3000/api/resize/?filename=imagename&height=400&width=300'
+        'Resize Route\nExample: localhost:3000/api/resize/?filename=<ImageName>&height=<height>&width=<width>'
     );
 
+    // take params from URL
     filename = String(req.query.filename);
     height = Number(req.query.height);
     width = Number(req.query.width);
 
-    //check if the parameters in the URL are valid (filename: string, height and width: number)
+    // check if the parameters in the URL are valid (filename: string, height and width: number)
     if (typeof filename === 'string' && !isNaN(height) && !isNaN(width)) {
         console.log('Valid Parameters. Processing...');
+        // if params are correct check the image if resized before with same dimensions
         checkIfDoneBefore();
     } else {
         console.log(

@@ -1,6 +1,5 @@
 import express from 'express';
 import path from 'path';
-
 import routes from './routes/index';
 import imgLogger from './logging/logExistingImgs';
 import resImgLogger from './logging/logResizedImg';
@@ -25,7 +24,7 @@ app.listen(PORT, () => {
 
 // write existing images names to a CSV file
 imgLogger();
-// make CSV file for resized images later
+// make a CSV file for resized images later
 resImgLogger();
 
 export default app;

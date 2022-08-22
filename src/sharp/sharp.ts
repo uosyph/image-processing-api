@@ -18,17 +18,10 @@ async function resizeImg(filename: string, height: number, width: number) {
         )
         .then(() => {
             console.log(
-                'Image has been resized and save to' +
-                    './assets/resized/' +
-                    filename +
-                    '_' +
-                    height +
-                    '_' +
-                    width +
-                    '.jpg'
+                'Image has been resized and saved to' + './assets/resized/' + filename + '_' + height + '_' + width + '.jpg' + '\n' + 'To Preview it go to http://localhost:3000/api/resize/?filename=' + filename + '&height=' + height + '&width=' + width
             );
-            console.log('Image has been resized');
 
+            // call func to save image name and dimensions to .resizedImgs.csv
             resImgLogger();
         });
 }
