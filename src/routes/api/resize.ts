@@ -1,4 +1,5 @@
 import express from 'express';
+import path from 'path';
 import checkIfDoneBefore from '../../validity/imgResBefore';
 
 const resize = express.Router();
@@ -12,6 +13,36 @@ resize.get('/', (req, res) => {
     filename = String(req.query.filename);
     height = Number(req.query.height);
     width = Number(req.query.width);
+
+    // preview resized image
+    function PRE() {
+        res.sendFile(
+            path.resolve(
+                'assets/resized/' +
+                    filename +
+                    '_' +
+                    height +
+                    '_' +
+                    width +
+                    '.jpg'
+            ),
+            (err) => {
+                if (err) {
+                    // if failed to load, load the orignal size image
+                    res.sendFile(
+                        path.resolve('assets/full/' + filename + '.jpg'),
+                        (err) => {
+                            if (err) {
+                                res.send(
+                                    'Resize Route. Example: localhost:3000/api/resize/?filename=<ImageName>&height=<height>&width=<width>'
+                                );
+                            }
+                        }
+                    );
+                }
+            }
+        );
+    }
 
     // check if the parameters in the URL are valid (filename: string, height and width: number)
     if (typeof filename === 'string' && !isNaN(height) && !isNaN(width)) {
@@ -37,8 +68,8 @@ resize.get('/', (req, res) => {
 
         // check if both height and width are larger then 0
         else if (height > 0 && width > 0) {
-            res.send('Resizing Route');
             console.log('Valid Parameters. Processing...');
+            setTimeout(PRE, 300);
 
             // if params are correct call the func to check if the image has been resized before with same dimensions
             checkIfDoneBefore();
