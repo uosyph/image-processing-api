@@ -110,12 +110,6 @@ Diplay full size image from assets/full
 * [![Express][express.shield]][express-url]
 * [![Sharp][sharp.shield]][sharp-url]
 
-## Notes:
-
-- If you want to preview an image after resizing it, you have to change the route from `api/resize` to `api/preview`.
-
-- After planning for using *EJS*, I changed my mind. So it doesn't serve any purpose in the code now.
-
 
 ## Changelog
 
