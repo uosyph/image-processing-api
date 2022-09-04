@@ -138,9 +138,9 @@ Diplay full size image from assets/full
 
 ## Resources
 
-- Find a string in a file : https://stackoverflow.com/a/17449232/18250861
+- Find a string in a file : https://stackoverflow.com/a/17449232/
 
-- Write files names in directory to a file : https://stackoverflow.com/a/51125945/18250861
+- Write files names in directory to a file : https://stackoverflow.com/a/51125945/
 
 
 
