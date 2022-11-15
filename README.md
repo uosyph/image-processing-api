@@ -5,11 +5,9 @@ Image Processing API
 </h1>
 
 <p align="center">
-Udacity NANODEGREE Program - ( First Project )
+<b>First Project</b> for Advanced Full-Stack Web Development, NANODEGREE - Udacity.
 <br>
 API that can be used to scale images via URL parameters.
-<br>
-- By : Yousef Saeed -
 </p>
 
 ---
